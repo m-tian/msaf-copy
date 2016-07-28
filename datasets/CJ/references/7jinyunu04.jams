@@ -1,0 +1,38 @@
+{
+  "chords": [], 
+  "notes": [], 
+  "tags": [], 
+  "sandbox": {}, 
+  "sources": [], 
+  "beats": [], 
+  "pitch": [], 
+  "melody": [], 
+  "sections": [
+    {
+      "annotation_metadata": {
+        "origin": "Centre for Digital Music", 
+        "annotation_rules": "TODO", 
+        "validation_and_reliability": "TODO", 
+        "attribute": "sections", 
+        "annotator": {
+          "name": "TODO", 
+          "email": "TODO"
+        }, 
+        "version": "1.0", 
+        "corpus": "qupujicheng", 
+        "annotation_tools": "Sonic Visualizer"
+      }, 
+      "data": [], 
+      "sandbox": {}
+    }
+  ], 
+  "metadata": {
+    "artist": "Jingju", 
+    "title": "7jinyunu04", 
+    "mbid": "", 
+    "version": 0.01, 
+    "echonest_id": "", 
+    "duration": -1, 
+    "md5": ""
+  }
+}
