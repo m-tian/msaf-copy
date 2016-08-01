@@ -18,20 +18,6 @@ from scipy.ndimage import filters
 from msaf.algorithms.interface import SegmenterInterface
 from msaf import pymf
 
-
-PLOT = True
-
-if PLOT:
-	'''
-	If visualisation is unavailable (running on the server etc.), import the following:
-	import matplotlib
-	matplotlib.use('Agg')
-	'''
-	import matplotlib.pyplot as plt
-	import matplotlib.gridspec as gridspec
-	SAVETO = '/Users/mitian/Documents/hg/phd-docs/thesis/notebooks/fig'
-
-
 def median_filter(X, M=8):
 	"""Median filter along the first axis of the feature matrix X."""
 	for i in xrange(X.shape[1]):
@@ -308,7 +294,5 @@ class Segmenter(SegmenterInterface):
 		# Post process estimations
 		est_idxs, est_labels = self._postprocess(est_idxs, est_labels)
 
-		if PLOT:
-			plot_seg(G0, est_idxs, est_labels)
 
 		return est_idxs, est_labels

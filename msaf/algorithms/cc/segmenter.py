@@ -15,15 +15,12 @@ from os.path import join, basename, splitext
 import numpy as np
 import os
 
-plot_save = '/Users/mitian/Documents/experiments/msaf-devel/msaf/algorithms/cc/plots'
 # Local stuff
 from msaf.algorithms.interface import SegmenterInterface
 try:
 	from msaf.algorithms.cc import cc_segmenter
 except:
 	pass
-
-plot_save = '/Users/mitian/Documents/hg/phd-docs/thesis/notebooks/fig'
 
 class Segmenter(SegmenterInterface):
 	def processFlat(self):

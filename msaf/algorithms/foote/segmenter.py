@@ -21,17 +21,6 @@ import pylab as plt
 import msaf
 from msaf.algorithms.interface import SegmenterInterface
 
-PLOT = True
-
-if PLOT:
-	'''
-	If visualisation is unavailable (running on the server etc.), import the following:
-	import matplotlib
-	matplotlib.use('Agg')
-	'''
-	import matplotlib.pyplot as plt
-	import matplotlib.gridspec as gridspec
-	SAVETO = '/Users/mitian/Documents/hg/phd-docs/thesis/notebooks/fig'
 
 def median_filter(X, M=8):
 	"""Median filter along the first axis of the feature matrix X."""
@@ -187,10 +176,8 @@ class Segmenter(SegmenterInterface):
 
 		# Post process estimations
 		est_idxs, est_labels = self._postprocess(est_idxs, est_labels)
-		
-		if PLOT:
-			plot_seg(nc, detection=est_idxs)
-		
+
+
 		return est_idxs, est_labels
 		# plt.figure(1)
 		# plt.plot(nc);
